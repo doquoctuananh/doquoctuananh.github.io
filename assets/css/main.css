@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    background-color: #97212D;
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+}
+
+.control{
+    display: flex;
+    align-items: center;
+}
+
+.control .logo img{
+    width: 30px;
+    height: 40px;
+}
+
+.nav-bar{
+    padding-left: 16px;
+}
+
+.nav-bar .nav-items{
+    text-decoration: none;
+    color: #fff;
+    padding-left: 16px;
+    text-transform: uppercase;
+    font-size: 16px;
+
+}
+
+
+.option{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.language{
+    cursor: pointer;
+}
+
+.option .language:hover .language-list{
+    display: block;
+}
+
+.language .language-list{
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    /* margin-top: 4px; */
+}
+
+
+.language-list .language-item{
+    background-color: #fff;
+    color: #000;
+    display: block;
+    padding: 8px 20px;
+    text-decoration: none;
+    min-height: 40px;
+
+}
+
+.language-list .language-item:hover{
+    background-color: #ccc;
+}
+
+.sign{
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+.sign .sign-items{
+    padding: 0 16px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sign .sign-items:hover{
+    color: #000;
+}
+
+/* slider */
+.slider{
+    margin-top: 76px;
+}
+
+.slider__img{
+    width: 100%;
+    
+}
+
+/* content */
+.content{
+    margin-top: 48px;
+    /* display: flex; */
+}
+
+/* first-team */
+#first-team{
+    margin: 0 auto;
+    width: 66.66666%;
+    overflow: hidden;
+}
+
+.rolex{
+    margin: 60px 0 60px 4px;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: underline #97212D;
+}
+
+.team-position .position-names{
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom:1px solid #000;
+    letter-spacing: 2px;
+}
+
+.team-position{
+
+}
+
+.team-position + .team-position{
+    margin-top: 36px;
+}
+
+.sub-position{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.position-btn{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 16px;
+}
+
+.position-img{
+    width: 250px;
+    position: absolute;
+    
+}
+
+.positon-info{
+    position: absolute;
+    left: 14%;
+    bottom: 5%;
+    width: 50%;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.position-number{
+    font-size: 14px;
+    text-decoration: underline red 3px;
+}
+
+.position-name{
+    font-size: 20px;
+}
+
+.sub-position.defend{
+    
+}
+
+#manager{
+    margin-top: 24px;
+    min-height: 200px;
+    background-color:#fff;
+    padding-bottom: 16px;
+    
+}
+
+.manager-visual{
+    display: flex;
+    padding-top: 48px;
+    background-color: #3F3F3F;
+    justify-content: space-around;
+}
+
+.visual-text{
+    flex-basis: 10%;
+}
+
+.visual-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+.role{
+    position: absolute;
+    top: -46.5px;
+    bottom: 46.5px;
+    padding-bottom: 30px;
+    font-size: 30.4px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: underline red ;
+}
+
+.role-name{
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #fff;
+    width: 70%;
+}
+
+.visual-message{
+    width: 70%;
+    font-style: italic;
+    font-size: 24px;
+    color: #ccc;
+}
+
+.visual-img{
+    display: flex;
+    align-items: stretch;
+}
+
+.visual-img img{
+    width: 500px;
+    flex-basis: 70%;
+}
+
+.visual-static {
+    display: flex;
+    flex-direction: column;
+}
+
+.match, .wins,.trophies{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.manager-info{
+    width: 60%;
+    margin: 48px auto;
+    background-color: #fff;
+}
+
+.info-bio{
+    border-bottom: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+ 
+.info-bio__heading{
+    margin-bottom: 16px;
+}
+
+.info-bio__text{
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.info-shortcut{
+    display: flex;
+    justify-content: space-between;
+}
+
+.short-items{
+    text-transform: uppercase;
+}
+
+.shortcut__heading{
+    font-size: 16px;
+    color: #ccc;
+    margin: 16px 0;
+}
+
+.shortcut__date--position{
+    font-size: 20px;
+    color: red;
+}
+
+
+#lengend{
+    background-color: #333;
+    min-height: 200px;
+    padding: 48px 0;
+    
+    position: relative;
+}
+
+.lengend-heading{
+    position: absolute;
+    left: 130px;
+    top: -2px;
+    padding: 16px 0;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: underline red 2px;
+}
+
+.lengend-sub-btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lengend-btn{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 24px;
+    border-radius: 10px;
+}
+
+.lengend-img{
+    position: absolute;
+    width: 250px;
+}
+
+.lengend-name{
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    color: #fff;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+
+/* footer */
+.footer{
+    display: flex;
+    
+    min-height: 200px;
+    flex-direction: column;
+}
+
+.footer-header{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: underline red 4px;
+}
+
+
+
+.footer-icon{
+    display: flex;
+    justify-content: center;
+}
+
+.icon-img{
+    width: 120px;
+}
+.icon-img+.icon-img{
+    margin-left: 32px;
+}
+
+.footer-fb{
+    text-align: center;
+    /* text-decoration: none; */
+    font-size: 20px;
+    color: red;
+    text-transform: uppercase;
+}
